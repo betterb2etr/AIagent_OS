@@ -7,6 +7,7 @@
     "build": "tsc",
     "start": "NODE_OPTIONS=--no-deprecation node dist/main.js",
     "start:dev": "NODE_OPTIONS=--no-deprecation ts-node src/main.ts",
+    "start:dev:win": "set NODE_OPTIONS=--no-deprecation && ts-node src/main.ts",
     "prepare": "ts-patch install"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/xlsx": "^0.0.36",
+    "cross-env": "^10.0.0",
     "ts-node": "^10.9.2",
     "ts-patch": "^3.3.0",
     "typescript": "~5.8.3"
